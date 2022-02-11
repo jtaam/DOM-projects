@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  background: #95a5a6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container h1 {
+  background-color: white;
+  padding: 1rem 2rem;
+}
+
+.container .btn {
+  margin-top: 32px;
+  padding: 8px 16px;
+  background-color: #2980b9;
+  border: 0;
+  color: white;
+  transition: 0.3s ease all;
+  text-transform: uppercase;
+}
+
+.container .btn:hover {
+  background-color: #3498db;
+  cursor: pointer;
+}
