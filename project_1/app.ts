@@ -24,9 +24,14 @@ function main(): void {
 // generate random color
 function generateRGBColor(): string {
   // rgb(0,0,0) ~ rgb(255,255,255)
-  const r: number = Math.floor(Math.random() * 255);
-  const g: number = Math.floor(Math.random() * 255);
-  const b: number = Math.floor(Math.random() * 255);
+  const red: number = getColor();
+  const green: number = getColor();
+  const blue: number = getColor();
 
-  return `rgb(${r},${g},${b})`;
+  return `rgb(${red},${green},${blue})`;
+}
+
+// get color
+function getColor(): number {
+  return Math.floor(Math.random() * 255);
 }
