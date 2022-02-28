@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hexacode | Project 6</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body>
+    <div
+      class="flex flex-row min-h-screen justify-center items-center"
+      id="root"
+    >
+      <div class="bg-transparent bg-gray-700/[0.3] p-16 rounded-md">
+        <h3 class="rounded-md text-2xl bg-gray-100 p-4 drop-shadow-2xl">
+          JS Dom Projects
+          <small> @ <span style="color: #e53935">StackLearner </span> </small>
+        </h3>
+        <div class="form w-96">
+          <div class="input items-start my-3">
+            <div>
+              <div class="mt-1 relative rounded-md shadow-sm">
+                <div
+                  class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+                >
+                  <span class="text-gray-500 sm:text-sm"> # </span>
+                </div>
+                <input
+                  type="text"
+                  name="price"
+                  id="output"
+                  class="focus:ring-indigo-500 focus:border-indigo-500 block w-full pl-7 pr-12 sm:text-sm border-gray-300 rounded-md"
+                  placeholder="000000"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="justify-between flex">
+            <button
+              id="generate-btn"
+              class="rounded-md bg-gray-500 hover:bg-blue-700 text-white font-bold py-2 px-4"
+            >
+              hexcode
+            </button>
+            <button
+              title="copy to clipboard"
+              id="copy-btn"
+              class="rounded-md bg-blue-500 hover:bg-green-700 text-white font-bold py-2 px-4"
+            >
+              copy
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
